@@ -1,18 +1,12 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
+import Alert from "@mui/material/Alert";
 
 const NoMatch = () => {
   return (
-    <div>
-      <Jumbotron>
-        <h1>404 Page Not Found</h1>
-        <h1>
-          <span role="img" aria-label="Face With Rolling Eyes Emoji">
-            🙄
-          </span>
-        </h1>
-      </Jumbotron>
-    </div>
+    <Alert variant="outlined" severity="error">
+      This is an error alert — check it out!
+    </Alert>
   );
 };
 
